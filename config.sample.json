@@ -1,0 +1,40 @@
+{
+  "isps": [
+    {
+      "name": "ISP-1 (Primary)",
+      "gateway": "8.8.8.8",
+      "backup_hosts": ["8.8.4.4", "1.1.1.1"],
+      "description": "Primary broadband link"
+    },
+    {
+      "name": "ISP-2 (Backup)",
+      "gateway": "1.1.1.1",
+      "backup_hosts": ["1.0.0.1", "9.9.9.9"],
+      "description": "Secondary/failover link"
+    }
+  ],
+  "thresholds": {
+    "latency_warn_ms": 100,
+    "latency_critical_ms": 300,
+    "packet_loss_warn_pct": 10,
+    "packet_loss_critical_pct": 30,
+    "consecutive_failures": 3,
+    "check_interval_sec": 30,
+    "ping_count": 5,
+    "ping_timeout_sec": 3
+  },
+  "email": {
+    "enabled": true,
+    "smtp_host": "smtp.gmail.com",
+    "smtp_port": 587,
+    "sender": "isp.monitor@yourdomain.com",
+    "password": "YOUR_APP_PASSWORD",
+    "recipients": ["it-team@yourdomain.com", "noc@yourdomain.com"],
+    "alert_cooldown_min": 15
+  },
+  "logging": {
+    "log_file": "isp_monitor.log",
+    "json_log": "isp_events.json",
+    "history_points": 100
+  }
+}

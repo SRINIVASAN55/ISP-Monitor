@@ -1,0 +1,4 @@
+# ISP-Monitor uses Python stdlib only — no pip install needed!
+# All features work out of the box on Python 3.8+
+# Optional: install for enhanced features
+# requests>=2.31.0   # for webhook alerts (Slack, Teams)

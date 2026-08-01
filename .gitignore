@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.env
+venv/
+isp_monitor.log
+isp_events.json
+isp_summary.json
+config.json
+.DS_Store

@@ -1,5 +1,9 @@
 # ISP-Monitor
 
+![CI](https://github.com/SRINIVASAN55/ISP-Monitor/actions/workflows/ci.yml/badge.svg) ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg) ![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
+
+
+
 Dual-ISP uptime and latency monitor with email alerting. Built for home labs and small offices running failover setups.
 
 ---

@@ -1,9 +1,36 @@
+# Python
 __pycache__/
-*.pyc
-.env
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
 venv/
-isp_monitor.log
-isp_events.json
-isp_summary.json
+.venv/
+ENV/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Config with secrets — never commit real config.json
 config.json
+
+# Logs & output
+*.log
+*.jsonl
+reports/
+honeypot_sessions.jsonl
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
 .DS_Store
+Thumbs.db
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
